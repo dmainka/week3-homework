@@ -1,0 +1,56 @@
+/*
+  CSS for dice game
+  Submitted by: djmainka
+*/
+
+/* Universal selector to reset all margins and padding to 0 */
+* {
+   margin: 0;
+   padding: 0;
+}
+
+/* center the body (or full page) */
+body {
+   text-align:center;
+}
+
+/* set the styling for the wrapper (a div element) that applies to all element
+    of the page unless overwritten by more specific elements below */
+#wrapper {
+  max-width: 960px;
+  margin: 20px auto;
+  text-align: left;
+  font-family: Tahoma;
+  color: gray;
+}
+
+/* uses shorthand notation for background */
+h1 {
+  border-bottom: 1px solid LightGray;
+  margin-bottom: 20px;
+  padding: 20px 0px;
+  font-weight: normal;
+  font-styel: normal;
+}
+
+h2 {
+  color: gray;
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-styel: normal;
+}
+
+p {
+/*  margin: 20px 0px 20px 0px;
+  border-bottom: 3px solid gray;
+*/}
+
+ul {
+  padding: 20px 40px;
+}
+
+button {
+  padding: 15px;
+  background-color: #093;
+  color: white;
+}
