@@ -30,7 +30,6 @@ class DiceController < ApplicationController
     end
 
     render "roll_view"
-
   end
 
   def roll_again
@@ -60,7 +59,6 @@ class DiceController < ApplicationController
     end
 
     render "roll_view"
-
   end
 
 end
