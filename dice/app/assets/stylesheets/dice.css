@@ -49,7 +49,7 @@ ul {
   padding: 20px 40px;
 }
 
-button {
+input.button {
   padding: 15px;
   background-color: #093;
   color: white;

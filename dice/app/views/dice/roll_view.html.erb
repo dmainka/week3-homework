@@ -11,6 +11,6 @@
 
   <br>
 
-  <button onclick="location.href=<%= @button_link %>"><%= @button_text %></button>
+  <%= button_to @button_text, @button_path, :class => "button" %>
 
 </div>
