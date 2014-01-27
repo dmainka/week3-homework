@@ -5,6 +5,11 @@ class DiceController < ApplicationController
     render "home_view"
   end
 
+  # the next two methods (start, roll_again) separate the first roll from all
+  # subsequent rolls. These could have been incorporated into one procedure
+  # but to more clearly distuguish the logic and the fact that one needs params
+  # (roll_again) and the other (start) doesn't I decided to separate these.
+
   # handle the first roll which checks that the player doesn't immediately
   # win or lose.  If neither applies then we set the goal equal to the sum
   # of the dice which is passed as a query string parameter
