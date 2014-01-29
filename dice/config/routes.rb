@@ -1,12 +1,12 @@
 Dice::Application.routes.draw do
 
-  match '/dice', {:controller => "dice", :action => "home", :via => 'get'}
+  get '/dice', {:controller => "dice", :action => "home"}
 
   # due to the use of button_to buttons naturally POST (which can be overridden but I chose not to do that)
   # so the routes below respond to the POST action
-  match '/dice', {:controller => "dice", :action => "home", :via => 'post'}
-  match '/start', {:controller => "dice", :action => "start", :via => 'post'}
-  match '/roll_again', {:controller => "dice", :action => "roll_again", :via => 'post'}
+  post '/dice', {:controller => "dice", :action => "home"}
+  post '/start', {:controller => "dice", :action => "start"}
+  post '/roll_again', {:controller => "dice", :action => "roll_again"}
 
   # this is old code based on the in-class example
   # get("/dice", { :controller => "dice", :action => "home"})
